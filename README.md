@@ -24,6 +24,15 @@ A production-ready e-commerce order service with:
     └── docker-compose.yml # Local development
 
 
+### Architecture
+
+```mermaid
+graph LR
+    A[Client] -->|REST/JSON| B[Gateway]
+    B -->|gRPC| C[OrderService]
+    C -->|In-Memory| D[Database]
+```
+
 ### 🚀 Quick Start
 
 
@@ -68,4 +77,15 @@ A production-ready e-commerce order service with:
 
       make protoc
 
+
+#### 📦 Deployment
+
+1. Order Service
+
+    docker build --target orders-service -t orders-service .
+
+
+2. Gateway Service
+
+    docker build --target gateway-service -t gateway-service .
 
