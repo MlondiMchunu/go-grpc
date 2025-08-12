@@ -30,3 +30,26 @@ A production-ready e-commerce order service with:
 #### Run services
 
     docker-compose up -d
+
+#### 🌐 API Endpoints
+
+    Method	            Endpoint	        Description
+    POST	            /v0/orders	        Create a new order
+    GET	                /v0/orders/{id}	    Get order details
+    PUT	                /v0/orders	        Update an existing order
+    DELETE	            /v0/orders/{id}	    Remove an order
+
+
+#### 🛠️ Development
+
+- Build binaries
+
+    make build
+    
+- Run tests
+
+    make test
+    
+- Regenerate protobuf files
+
+  make protoc
