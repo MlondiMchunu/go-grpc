@@ -1,4 +1,6 @@
-syntax = "proto3"
+syntax = "proto3";
+
+option go_package = "github.com/koyeb/go-grpc/protogen/golang/orders";
 
 enum ProductType{
     UNKNOWN = 0;
@@ -6,8 +8,8 @@ enum ProductType{
     DRINK = 2;
 
     message Product{
-        uint64 product_id = 1 [ json_name = "product_id" ]
-        string product_name = 2 [ json_name = "product_name" ]
+        uint64 product_id = 1 [ json_name = "product_id" ];
+        string product_name = 2 [ json_name = "product_name" ];
         ProductType product_type = 5 [ json_name = "product_type" ]
     }
 }
