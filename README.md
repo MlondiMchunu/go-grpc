@@ -10,6 +10,20 @@ A production-ready e-commerce order service with:
 - Dockerized deployment
 - Koyeb cloud-ready configuration
 
+#### 📂 Project Structure
+
+    .
+    ├── cmd/
+    │   ├── server/        # gRPC server main
+    │   └── client/        # Gateway server main
+    ├── internal/
+    │   ├── orderservice.go # Service implementation
+    │   └── db.go          # Database layer
+    ├── proto/             # Protocol Buffer definitions
+    ├── protogen/          # Generated code
+    └── docker-compose.yml # Local development
+
+
 ### 🚀 Quick Start
 
 
@@ -54,15 +68,4 @@ A production-ready e-commerce order service with:
 
       make protoc
 
-#### 📂 Project Structure
 
-    .
-    ├── cmd/
-    │   ├── server/        # gRPC server main
-    │   └── client/        # Gateway server main
-    ├── internal/
-    │   ├── orderservice.go # Service implementation
-    │   └── db.go          # Database layer
-    ├── proto/             # Protocol Buffer definitions
-    ├── protogen/          # Generated code
-    └── docker-compose.yml # Local development
