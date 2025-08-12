@@ -21,3 +21,42 @@ graph LR
     Client-->|REST/JSON| Gateway
     Gateway-->|gRPC| OrderService
     OrderService-->|In-Memory| Database
+
+
+###Prerequisites
+
+- Go 1.21+
+
+- Protocol Buffer compiler (protoc) v3+
+
+- Docker (optional)
+
+- Koyeb account (for deployment)
+
+##Q#uick Start
+
+1. Clone the repository
+
+    git clone https://github.com/your-repo/go-grpc.git
+
+    cd example-go-grpc-gateway
+
+2. Install dependencies
+
+    make deps
+
+3. Generate protobuf code
+
+    make protoc
+
+4. Run services locally
+
+    docker-compose up -d
+
+### API Endpoints
+
+    Method	   Path	                Description
+    POST	   /v0/orders	        Create new order
+    GET	       /v0/orders/{id}	    Get order by ID
+    PUT	       /v0/orders	        Update order
+    DELETE	   /v0/orders/{id}	    Delete order
