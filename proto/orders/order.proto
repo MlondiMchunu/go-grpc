@@ -1,3 +1,5 @@
+// ./proto/orders/order.proto
+
 syntax = "proto3";
 
 option go_package = "github.com/koyeb/go-grpc/protogen/golang/orders";
@@ -5,7 +7,7 @@ option go_package = "github.com/koyeb/go-grpc/protogen/golang/orders";
 import "product/product.proto";
 import "google/api/date.proto";
 
-message Order{
+message Order {
     uint64 order_id = 1 [ json_name = "order_id" ];
     uint64 customer_id = 2 [ json_name = "customer_id" ];
     bool is_active = 3 [ json_name = "is_active" ];
