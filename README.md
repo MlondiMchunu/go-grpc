@@ -1,4 +1,4 @@
-# gRPC Order Service with Go and gRPC-Gateway
+## gRPC Order Service with Go and gRPC-Gateway
 
 ![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?style=for-the-badge&logo=go)
 ![gRPC](https://img.shields.io/badge/gRPC-1.0-4285F4?style=for-the-badge&logo=google)
@@ -10,23 +10,23 @@ A production-ready e-commerce order service with:
 - Dockerized deployment
 - Koyeb cloud-ready configuration
 
-## 🚀 Quick Start
+### 🚀 Quick Start
 
-```bash
-# Clone the repository
+
+#### Clone the repository
 
     git clone https://github.com/MlondiMchunu/go-grpc.git
 
     cd go-grpc
 
-# Install dependencies
+#### Install dependencies
 
     make deps
 
-# Generate protobuf code
+#### Generate protobuf code
 
     make protoc
 
-# Run services
+#### Run services
 
     docker-compose up -d
