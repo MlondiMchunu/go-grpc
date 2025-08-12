@@ -44,12 +44,25 @@ A production-ready e-commerce order service with:
 
 - Build binaries
 
-    make build
+      make build
     
 - Run tests
 
-    make test
+      make test
     
 - Regenerate protobuf files
 
-  make protoc
+      make protoc
+
+#### 📂 Project Structure
+
+    .
+    ├── cmd/
+    │   ├── server/        # gRPC server main
+    │   └── client/        # Gateway server main
+    ├── internal/
+    │   ├── orderservice.go # Service implementation
+    │   └── db.go          # Database layer
+    ├── proto/             # Protocol Buffer definitions
+    ├── protogen/          # Generated code
+    └── docker-compose.yml # Local development
