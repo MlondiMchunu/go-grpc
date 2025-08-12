@@ -15,6 +15,8 @@ message Order {
     google.type.Date order_date = 5 [ json_name = "order_date" ];
 }
 
+// A generic empty message that you can re-use to avoid defining duplicated
+// empty messages in your APIs
 message Empty {}
 
 message PayloadWithSingleOrder {
