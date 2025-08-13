@@ -8,7 +8,7 @@ A production-ready e-commerce order service with:
 - gRPC microservice (HTTP/2 + Protobuf)
 - RESTful JSON API gateway
 - Dockerized deployment
-- Koyeb cloud-ready configuration
+
 
 #### 📂 Project Structure
 
