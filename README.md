@@ -82,10 +82,10 @@ graph LR
 
 1. Order Service
 
-    docker build --target orders-service -t orders-service .
+        docker build --target orders-service -t orders-service .
 
 
 2. Gateway Service
 
-    docker build --target gateway-service -t gateway-service .
+        docker build --target gateway-service -t gateway-service .
 
